@@ -1,0 +1,25 @@
+@media (max-width: 966px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .content p {
+    font-size: 2rem;
+  }
+
+  .content h1 {
+    font-size: 3.75rem;
+  }
+
+  .launch {
+    font-size: 2rem;
+  }
+}
