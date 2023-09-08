@@ -13,10 +13,29 @@ const x = setInterval(() => {
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  daysText.html(days);
-  hoursText.html(hours);
-  minutesText.html(minutes);
-  secondsText.html(seconds);
+  if (days < 10) {
+    daysText.html(`0${days}`);
+  } else {
+    daysText.html(days);
+  }
+
+  if (hours < 10) {
+    hoursText.html(`0${hours}`);
+  } else {
+    hoursText.html(hours);
+  }
+
+  if (minutes < 10) {
+    minutesText.html(`0${minutes}`);
+  } else {
+    minutesText.html(minutes);
+  }
+
+  if (seconds < 10) {
+    secondsText.html(`0${seconds}`);
+  } else {
+    secondsText.html(seconds);
+  }
 
   if (distance < 0) {
     clearInterval(x);
