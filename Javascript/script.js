@@ -1,5 +1,5 @@
 const daysText = $("#days");
-const hoursText = $("hours");
+const hoursText = $("#hours");
 const minutesText = $("#minutes");
 const secondsText = $("#seconds");
 
