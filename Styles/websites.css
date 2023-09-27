@@ -1,0 +1,91 @@
+.blurred-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.9rem);
+  display: flex;
+  justify-content: center;
+  width: 35rem;
+  border-radius: 1rem;
+  transition: opacity 250ms ease-in-out;
+}
+
+.blurred-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2.5s infinite;
+  background-color: white;
+}
+
+.blurred-img img {
+  opacity: 0;
+}
+
+.blurred-img.loaded::before {
+  animation: none;
+  content: none;
+}
+
+.blurred-img.loaded img {
+  opacity: 1;
+}
+
+.website-showcase .website-card:nth-child(1) .blurred-img {
+  background-image: url(../Images/websites/omnifood-small.jpg);
+}
+
+.website-showcase .website-card:nth-child(2) .blurred-img {
+  background-image: url(../Images/websites/the-wellhall-small.jpg);
+}
+
+.website-showcase .website-card:nth-child(3) .blurred-img {
+  background-image: url(../Images/websites/halerdon-real-estate-small.jpg);
+}
+
+.website-showcase .website-card:nth-child(4) .blurred-img {
+  background-image: url(../Images/websites/kinnectric-small.jpg);
+}
+
+.website-showcase .website-card:nth-child(5) .blurred-img {
+  background-image: url(../Images/websites/hendles-builders-small.jpg);
+}
+
+.website-showcase .website-card:nth-child(6) .blurred-img {
+  background-image: url(../Images/websites/roseton-travel-small.jpg);
+}
+
+.remove-filter {
+  filter: none;
+}
+
+.hidden {
+  background-image: none !important;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 38em) {
+  .blurred-img {
+    width: 32rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .blurred-img {
+    width: 24rem;
+  }
+}

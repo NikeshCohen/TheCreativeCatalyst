@@ -1,58 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="The Creative Catalyst" property="og:title" />
+    <meta
+      name="description"
+      content="The Creative Catalyst is a full-service web development and content creation agency that helps businesses of all sizes create and launch high-quality, user-friendly websites and produce high-quality, engaging content. We specialize in custom web design and web development. Our team of developers are passionate about creating websites that help businesses achieve their goals."
+    />
+    <meta name="author" content="Nikesh Cohen" />
+    <meta
+      name="keywords"
+      content="web development
+    web development agency
+    web design
+    web development services
+    website development
+    custom web development
+    e-commerce development
+    WordPress development
+    SEO
+    digital marketing
+    online presence
+    business website
+    content creation"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/styles.css" />
-    <link rel="stylesheet" href="Styles/queries.css" />
-    <link rel="icon" href="Images/The Creative Catalyst(Logo).png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>The Creative Catalyst</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="Javascript/script.js"></script>
+    <script defer src="Javascript/home-animation.js"></script>
+    <link rel="icon" href="Images/logos/The Creative Catalyst(Logo).png" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/queries.css" />
+
+    <title>The Creative Catalyst | Home</title>
   </head>
   <body>
     <header>
-      <img
-        src="Images/The Creative Catalyst(Secondary)(White).png"
-        alt="Background image of a galaxy"
-        class="logo-header"
-      />
-      <nav>
-        <a href="https://www.youtube.com/shorts/OaedwMglUXM"
-          ><button class="btn">Learn more</button></a
+      <a href="index.html" class="header-logo">
+        <img
+          src="Images/logos/The Creative Catalyst(Secondary)(White).png"
+          alt="The Creative Catalyst logo"
+          class="header-img"
+      /></a>
+      <nav class="nav-bar">
+        <a href="#service-section" class="nav-link">Services</a>
+        <a href="#mission-section" class="nav-link">Our Mission</a>
+        <a href="#portfolio-section" class="nav-link">Portfolio</a>
+        <a href="#faq-section" class="nav-link">FAQ</a>
+        <a href="#contact-section" class="nav-link">Contact us</a>
+        <a href="https://calendly.com/thecreativecatalyst/consultation">
+          <button class="btn cta-btn">Work with us!</button></a
         >
       </nav>
+
+      <nav class="mobile-nav">
+        <a href="#service-section" class="nav-link">Services</a>
+        <a href="#mission-section" class="nav-link">Our Mission</a>
+        <a href="#portfolio-section" class="nav-link">Portfolio</a>
+        <a href="#faq-section" class="nav-link">FAQ</a>
+        <a href="#contact-section" class="nav-link">Contact us</a>
+        <a href="https://calendly.com/thecreativecatalyst/consultation">
+          <button class="mobile-btn">Work with us!</button></a
+        >
+      </nav>
+
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
     </header>
-    <section class="hero">
-      <div class="content">
-        <p>We are launching soon.</p>
-        <h1>All your content needs,<br /><span>Answered</span></h1>
-        <div class="launch">
+    <section class="hero" id="hero">
+      <div class="hero-img-box">
+        <img
+          src="Images/logos/The Creative Catalyst(Main)(Orange)(White).png"
+          alt="The Creative Catalyst Logo"
+          class="hero-img"
+        />
+      </div>
+      <div class="hero-text">
+        <h1 class="hero-heading">
+          All your content needs,<br /><span>Answered</span>
+        </h1>
+        <p class="hero-subtext">
+          From Idea to execution, we've got you covered.<br />We'll assist in
+          creating content that engages, informs & converts.
+        </p>
+
+        <a href="https://calendly.com/thecreativecatalyst/consultation">
+          <button class="btn cta-btn">Work with us!</button></a
+        >
+      </div>
+    </section>
+    
+    <section class="services" id="service-section">
+      <h1 class="services-heading">
+        Need a new website, a redesign or content creation?<br />
+        <span>We have your back!</span>
+      </h1>
+      <div class="service-box">
+        <div class="service-item">
           <div>
-            <p id="days">00</p>
-            <span>Days</span>
+            <div class="image-box">
+              <img
+                src="Images/icons/web-design.png"
+                alt="icon that representing web design"
+                class="service-icon"
+              />
+            </div>
+
+            <div><h2 class="service-item-heading">Web Design</h2></div>
+            <div>
+              <ul class="attr-list">
+                <li>
+                  Creation of custom logos that are memorable and effective
+                </li>
+                <li>Assist you in creating a cohesive brand identity</li>
+                <li>
+                  Design user interfaces and user experiences that are intuitive
+                  and engaging
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <div class="service-item">
           <div>
-            <p id="hours">00</p>
-            <span>Hours</span>
+            <div class="image-box">
+              <img
+                src="Images/icons/web-development.png"
+                alt="icon that represents web-development"
+                class="service-icon"
+              />
+            </div>
+            <div><h2 class="service-item-heading">Web Development</h2></div>
+            <div>
+              <ul class="attr-list">
+                <li>We keep your website up and running smoothly</li>
+                <li>
+                  Development of custom web applications that meet your specific
+                  needs
+                </li>
+                <li>Reliable and secure web hosting solutions</li>
+                <li>
+                  Optimize your website so it can be viewed by more people
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <div class="service-item">
           <div>
-            <p id="minutes">00</p>
-            <span>Minutes</span>
-          </div>
-          <div>
-            <p id="seconds">00</p>
-            <span>Seconds</span>
+            <div class="image-box">
+              <img
+                src="Images/icons/content-creation.png"
+                alt="icon that represents content-creation"
+                class="service-icon"
+              />
+            </div>
+            <div><h2 class="service-item-heading">Content Creation</h2></div>
+            <d>
+              <ul class="attr-list">
+                <li>
+                  Web content that helps attract & engage visitors to your
+                  website.
+                </li>
+                <li>
+                  Creation of engaging content that helps build relationships
+                  with your audience.
+                </li>
+                <li>
+                  Production of high-quality videos that engage your audience.
+                </li>
+              </ul>
+            </d
           </div>
         </div>
       </div>
-      <img src="Images/rocket.png" class="rocket" alt="Image of a rocket" />
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="Javascript/script.js"></script>
+
+    <section class="our-mission" id="mission-section">
+      <h1 class="our-mission-heading">
+        Why we are the <span>best</span> web<br />
+        Development Agency for
+        <span>you</span>
+      </h1>
+      <div class="attributes">
+        <div class="attr-big-box">
+          <div class="attr-row">
+            <div class="attr-box">
+              <img
+                src="Images/icons/excellence.png"
+                alt="icon representing excellence"
+                class="attr-img"
+              />
+              <div class="attr">Excellence</div>
+            </div>
+            <p class="attr-text">
+              We strive to deliver the highest quality work possible, using the
+              latest technologies and techniques, no matter how complex or
+              challenging the project may be, even if it requires us to go the
+              extra mile. We are committed to providing our clients with the
+              best possible service and exceed their expectations.
+            </p>
+          </div>
+          <div class="attr-row">
+            <p class="attr-text">
+              We are always looking for new and innovative ways to improve our
+              services and products, by researching and testing new ideas, and
+              by collaborating with others to share knowledge and expertise. We
+              believe that innovation is essential for success in today's
+              competitive marketplace.
+            </p>
+            <div class="attr-box">
+              <img
+                src="Images/icons/innovation.png"
+                alt="icon representing innovation"
+                class="attr-img"
+              />
+              <div class="attr">Innovation</div>
+            </div>
+          </div>
+          <div class="attr-row">
+            <div class="attr-box">
+              <img
+                src="Images/icons/ingenuity.png"
+                alt="icon representing ingenuity"
+                class="attr-img"
+              />
+              <div class="attr">Ingenuity</div>
+            </div>
+            <p class="attr-text">
+              We are creative and resourceful, and we are not afraid to think
+              outside the box, by coming up with new and unconventional
+              solutions to problems, and by using our imagination to see
+              possibilities where others see none. We believe that ingenuity is
+              the key to solving the challenges of the future.
+            </p>
+          </div>
+        </div>
+        <div class="attr-mobile-box">
+          <div class="attr-row">
+            <div class="attr-box">
+              <img
+                src="Images/icons/excellence.png"
+                alt="icon representing excellence"
+                class="attr-img"
+              />
+              <div class="attr">Excellence</div>
+            </div>
+            <p class="attr-text">
+              We strive to deliver the highest quality work possible, using the
+              latest technologies and techniques, no matter how complex or
+              challenging the project may be, even if it requires us to go the
+              extra mile. We are committed to providing our clients with the
+              best possible service and exceed their expectations.
+            </p>
+          </div>
+          <div class="attr-row">
+            <div class="attr-box">
+              <img
+                src="Images/icons/innovation.png"
+                alt="icon representing innovation"
+                class="attr-img"
+              />
+              <div class="attr">Innovation</div>
+            </div>
+            <p class="attr-text">
+              We are always looking for new and innovative ways to improve our
+              services and products, by researching and testing new ideas, and
+              by collaborating with others to share knowledge and expertise. We
+              believe that innovation is essential for success in today's
+              competitive marketplace.
+            </p>
+          </div>
+          <div class="attr-row">
+            <div class="attr-box">
+              <img
+                src="Images/icons/ingenuity.png"
+                alt="icon representing ingenuity"
+                class="attr-img"
+              />
+              <div class="attr">Ingenuity</div>
+            </div>
+            <p class="attr-text">
+              We are creative and resourceful, and we are not afraid to think
+              outside the box, by coming up with new and unconventional
+              solutions to problems, and by using our imagination to see
+              possibilities where others see none. We believe that ingenuity is
+              the key to solving the challenges of the future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio-section">
+      <h1 class="portfolio-heading">
+        "The best way to <span>Predict</span> the future is to
+        <span>Create</span> it."
+      </h1>
+      <p class="portfolio-subheading">
+        We believe in this philosophy. We are creators who shape the way people
+        interact with the world.<br />
+        Here is some of the content we have created!
+      </p>
+      <div class="portfolio-box">
+        <div class="video-box">
+          <img
+            src="Images/GIFs/The Creative Catalyst Promo .gif"
+            alt="GIF of company motto"
+            class="video"
+          />
+        </div>
+        <div class="btn-container">
+          <a href="Pages/websites.html"><button>Website Projects</button></a>
+          <a href="Pages/videos.html"><button>Video Projects</button></a>
+          <a href="Pages/gallery.html"><button>Photo Gallery</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq-section">
+      <h1 class="faq-heading">
+        We <span>understand</span> that you may have some questions
+      </h1>
+      <div class="faq-container-main">
+        <div class="faq-container active">
+          <div class="question">
+            <h3>What are the benefits of having a website?</h3>
+            <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+          </div>
+          <div class="answer">
+            <p>
+              A website can help you to increase brand awareness, generate
+              leads, drive sales, improve customer service, and build
+              credibility.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="question">
+            <h3>How long does it take to develop a website?</h3>
+            <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+          </div>
+          <div class="answer">
+            <p>
+              The time it takes to develop a website depends on its complexity,
+              It can take anywhere from a few weeks to a few months.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="question">
+            <h3>Can you work with my budget?</h3>
+            <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+          </div>
+          <div class="answer">
+            <p>
+              Yes, we can! We will need to know more about your specific needs
+              and requirements before providing you with an accurate estimate.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="question">
+            <h3>What is your process for developing a website?</h3>
+            <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+          </div>
+          <div class="answer">
+            <p>
+              We follow a six-step process, specifically developed to get your
+              site up and running as soon as possible. The steps are as
+              followed: initial consultation, design, development, testing,
+              deployment, and support.
+            </p>
+          </div>
+        </div>
+        <div class="faq-container">
+          <div class="question">
+            <h3>What kind of support do you offer after launched?</h3>
+            <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+          </div>
+          <div class="answer">
+            <p>
+              We offer a variety of support options, including website
+              maintenance, security, troubleshooting, and training.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-section">
+      <h1 class="contact-heading">Ready to work with us?</h1>
+      <h4 class="contact-subheading">
+        Schedule a consultation or send us a message.
+      </h4>
+      <a href="https://calendly.com/thecreativecatalyst/consultation">
+        <button class="btn cta-btn contact-btn">
+          Schedule consultation
+        </button></a
+      >
+      <h3>OR</h3>
+
+      <div class="form-box">
+        <h3 class="form-heading">Send us a message</h3>
+        <form
+          class="form"
+          name="contact"
+          method="POST"
+          action="Pages/success.html"
+          data-netlify="true"
+        >
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="mail" placeholder="E-Mail" required />
+          <input type="tel" id="phone" placeholder="Phone" required />
+          <textarea
+            id="freeform"
+            name="freeform"
+            rows="4"
+            cols="50"
+            placeholder="Your Message.."
+            required
+          ></textarea>
+          <button class="form-btn">
+            Send
+            <ion-icon name="send-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="company">
+        <p>Company</p>
+
+        <a href="#service-section" class="footer-link">Services</a>
+        <a href="#mission-section" class="footer-link">Our Mission</a>
+        <a href="#portfolio-section" class="footer-link">Portfolio</a>
+        <a href="#faq-section" class="footer-link">FAQ</a>
+        <a href="#contact-section" class="footer-link">Contact us</a>
+      </div>
+      <div class="links">
+        <p>Social Media</p>
+        <div class="link">
+          <ion-icon name="logo-youtube" class="footer-icon"></ion-icon>
+          <a
+            href="https://www.youtube.com/@nikeshcohen"
+            target="_blank"
+            class="footer-link"
+          >
+            YouTube
+          </a>
+        </div>
+        <div class="link">
+          <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+          <a
+            href="https://www.instagram.com/nikesh_cohen/"
+            target="_blank"
+            class="footer-link"
+          >
+            Instagram
+          </a>
+        </div>
+        <div class="link">
+          <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+          <a
+            href="https://twitter.com/nikeshcohen"
+            target="_blank"
+            class="footer-link"
+          >
+            Twitter
+          </a>
+        </div>
+        <div class="link">
+          <ion-icon name="globe-outline" class="footer-icon"></ion-icon>
+          <a href="http://thecreativecatalyst.co.za/" class="footer-link">
+            Website
+          </a>
+        </div>
+      </div>
+      <div class="text-container">
+        <h1 class="footer-heading">
+          All your content needs,<br /><span>Answered</span>
+        </h1>
+        <p class="copyright">
+          Copyright © 2022 by The Creative Catalyst Inc PTY(LTD). All rights
+          reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

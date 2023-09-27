@@ -1,25 +1,426 @@
-@media (max-width: 966px) {
-  html {
-    font-size: 62.5%;
+@media (max-width: 64em) {
+  .nav-bar {
+    gap: 1.5rem;
   }
-}
 
-@media (max-width: 600px) {
-  html {
-    font-size: 50%;
+  .nav-link {
+    font-size: 1.5rem;
   }
-}
 
-@media (max-width: 425px) {
-  .content p {
+  .cta-btn {
+    font-size: 1.5rem;
+  }
+
+  .hero-img {
+    width: 40rem;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.4rem;
+  }
+
+  .service-box {
+    grid-template-columns: 1fr;
+    padding: 8rem 6rem;
+    grid-gap: 8rem;
+  }
+
+  .services-heading,
+  .portfolio-heading,
+  .contact-heading,
+  .our-mission-heading {
+    font-size: 3rem;
+  }
+
+  .attr-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .attr-big-box {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .attr-row {
+    gap: 4rem;
+  }
+
+  .attr-img {
+    width: 12rem;
+  }
+
+  .attr {
     font-size: 2rem;
   }
 
-  .content h1 {
-    font-size: 3.75rem;
+  .attr-text {
+    font-size: 1.4rem;
   }
 
-  .launch {
+  .portfolio-subheading {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-box {
+    gap: 10rem;
+  }
+
+  .faq-heading {
+    font-size: 3.5rem;
+  }
+
+  .faq-container {
+    width: 50rem;
+  }
+
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .answer p {
+    font-size: 1.4rem;
+  }
+
+  .contact-subheading {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    gap: 15rem;
+  }
+
+  .copyright {
+    padding-top: 1.5rem;
+  }
+  .company p,
+  .links p {
     font-size: 2rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar-success {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-link,
+  .cta-btn {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.8rem;
+  }
+
+  .hero-img {
+    width: 30rem;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.4rem;
+  }
+
+  .services-heading,
+  .portfolio-heading,
+  .contact-heading,
+  .our-mission-heading,
+  .faq-heading {
+    font-size: 2.6rem;
+  }
+
+  .service-item-heading {
+    font-size: 2.2rem;
+  }
+
+  .service-box {
+    padding: 5rem 3.5rem;
+    grid-gap: 5rem;
+  }
+
+  .service-icon {
+    width: 16rem;
+  }
+
+  .attr-list {
+    font-size: 1.4rem;
+  }
+
+  .attr-big-box {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .attr-row {
+    gap: 4rem;
+  }
+
+  .our-mission-heading {
+    padding: 10rem 0 1rem 0;
+    line-height: 3.8rem;
+  }
+
+  .faq-heading {
+    padding-bottom: 3rem;
+  }
+
+  .faq-container {
+    width: 50rem;
+  }
+
+  .question {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .form-box {
+    margin: 2rem;
+  }
+
+  input,
+  textarea {
+    width: 30rem;
+  }
+
+  textarea:focus,
+  input:focus {
+    width: 28rem;
+  }
+
+  .footer-heading {
+    font-size: 2.6rem;
+  }
+
+  footer {
+    gap: 10rem;
+  }
+
+  .copyright {
+    padding-top: 1.5rem;
+  }
+  .company p,
+  .links p {
+    font-size: 2rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .header-img {
+    width: 10rem;
+  }
+
+  .video-box {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .hero-img-box {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-text {
+    padding: 2rem;
+  }
+
+  .error-code {
+    font-size: 3rem;
+  }
+
+  .error-heading {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .hero-text {
+    padding: 30rem 2rem 20rem 2rem;
+  }
+
+  br {
+    content: "";
+  }
+
+  br::after {
+    content: " ";
+  }
+
+  .services-heading,
+  .portfolio-heading,
+  .contact-heading,
+  .our-mission-heading,
+  .faq-heading {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .service-box {
+    grid-gap: 5rem;
+  }
+
+  .attr-list {
+    display: flex;
+    align-items: start;
+  }
+  .attr-row {
+    margin: 3rem;
+  }
+
+  .attr-text {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-subheading {
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  br {
+    content: " ";
+  }
+
+  br:after {
+    content: " ";
+  }
+
+  .portfolio-box {
+    gap: 4rem;
+    padding: 5rem;
+  }
+
+  .question {
+    font-size: 1.4rem;
+  }
+
+  .faq-container {
+    width: 30rem;
+  }
+
+  input {
+    height: 4.4rem;
+  }
+
+  textarea {
+    min-height: 8rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .services-heading,
+  .portfolio-heading,
+  .contact-heading,
+  .our-mission-heading,
+  .faq-heading {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .service-icon,
+  .attr-img {
+    width: 12rem;
+  }
+
+  .service-item-heading {
+    font-size: 1.8;
+  }
+
+  .attr {
+    font-size: 1.8rem;
+  }
+
+  .attr-text {
+    font-size: 1rem;
+  }
+
+  .attr-list {
+    font-size: 1.2rem;
+  }
+
+  .attr-big-box {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .attr-mobile-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attr-row {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 2rem;
+  }
+
+  .portfolio-subheading {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .btn-container {
+    gap: 6rem;
+  }
+
+  .text-container {
+    align-items: center;
+  }
+
+  .error-code {
+    font-size: 3rem;
+  }
+
+  .error-heading {
+    font-size: 8rem;
+  }
+
+  .error-subheading {
+    font-size: 1rem;
+  }
+
+  .text-container {
+    text-align: center;
   }
 }

@@ -1,0 +1,192 @@
+:root {
+  --orange: rgb(245, 166, 91);
+  --hover: rgb(253, 150, 53);
+  --white: rgb(255, 245, 238);
+  --black: rgb(0, 0, 0);
+  --br: 1rem;
+}
+
+.video-showcase,
+.website-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 12rem;
+  background-image: radial-gradient(rgb(109, 74, 42) 0.2rem, transparent 0.2rem),
+    radial-gradient(rgb(70, 47, 26) 0.2rem, rgb(0, 0, 0) 0.2rem);
+  background-size: 6.8rem 6.8rem;
+  background-position: 0 0, 4rem 4rem;
+}
+
+.video-card,
+.website-card {
+  background-color: var(--orange);
+  color: var(--white);
+  height: 45rem;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--br);
+  transition: all 0.3s ease;
+}
+
+.website-card {
+  height: 46rem;
+}
+
+.video-card:hover,
+.website-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.video-heading,
+.website-heading {
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.video {
+  background-color: black;
+  margin: 1rem;
+  border-radius: var(--br);
+}
+
+.website-img {
+  width: 35rem;
+  margin: 1rem;
+  border-radius: var(--br);
+}
+
+.video-description {
+  font-size: 1.8rem;
+  padding: 3rem;
+}
+
+.website-description {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+}
+
+.video-btn,
+.website-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--black);
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: var(--br);
+  color: var(--white);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-btn:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.website-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.video-btn:active,
+.website-btn:active {
+  transform: translateY(0.25rem);
+}
+
+.youtube-icon,
+.eye-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 38em) {
+  .video,
+  .website-img {
+    width: 32rem;
+  }
+
+  .video-card,
+  .website-card {
+    height: 48rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .video-showcase,
+  .website-showcase {
+    gap: 6rem;
+    padding: 16rem;
+  }
+
+  .website-card {
+    height: 48rem;
+  }
+
+  .video-card,
+  .website-card {
+    width: 40rem;
+  }
+
+  .video-heading,
+  .website-heading {
+    font-size: 2.6rem;
+    padding: 1.2rem;
+  }
+
+  .video-description {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .website-heading {
+    text-align: center;
+  }
+  .website-btn {
+    margin-bottom: 0.8rem;
+  }
+  .video-showcase,
+  .website-showcase {
+    gap: 8rem;
+    padding: 16rem;
+  }
+
+  .video-card,
+  .website-card {
+    height: 42rem;
+    width: 28rem;
+  }
+
+  .video,
+  .website-img {
+    width: 26rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+
+  .website-img {
+    width: 24rem;
+  }
+
+  .video-description,
+  .website-description {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+}
