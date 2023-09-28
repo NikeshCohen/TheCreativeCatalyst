@@ -72,17 +72,39 @@ header {
   font-size: 2rem;
   text-decoration: none;
   color: var(--white);
-  transition: all 0.4s;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
 
 .nav-link:visited {
   color: var(--white);
 }
 
-.nav-link:hover {
+.nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
   transform: translateY(-0.2rem);
   color: var(--orange);
   border-bottom: 0.15rem solid var(--orange);
+}
+
+.nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -8px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--orange);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 .btn {
@@ -571,18 +593,42 @@ input:focus {
 }
 
 .form-btn {
+  font-family: inherit;
+  font-size: 20px;
+  background: var(--orange);
+  color: var(--white);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
   display: flex;
   align-items: center;
-  justify-content: center;
   border: none;
-  gap: 2rem;
-  width: 12rem;
-  padding: 1rem;
-  font-size: 1.6rem;
-  color: var(--white);
-  background-color: var(--orange);
   border-radius: var(--br);
+  overflow: hidden;
   transition: all 0.4s;
+}
+
+.form-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.4s;
+}
+
+.form-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.form-btn:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.form-btn:hover span {
+  transform: translateX(5em);
 }
 
 .form-btn:hover {
@@ -590,8 +636,21 @@ input:focus {
 }
 
 .form-btn:active {
-  background-color: var(--hover);
-  transform: translateY(0.2rem);
+  transform: scale(0.95);
+}
+
+.form-btn:active.form-btn:hover svg {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 /* ---------------------------- Footer -------------------------------- */

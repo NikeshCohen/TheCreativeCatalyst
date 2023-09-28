@@ -113,6 +113,23 @@
     display: none;
   }
 
+  .nav-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.4s;
+  }
+
+  .nav-link:visited {
+    color: var(--white);
+  }
+
+  .nav-link:hover {
+    transform: translateY(-0.2rem);
+    color: var(--orange);
+    border-bottom: 0.15rem solid var(--orange);
+  }
+
   .nav-bar-success {
     display: flex;
   }
@@ -338,6 +355,15 @@
 
   textarea {
     min-height: 8rem;
+  }
+
+  .form-btn {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .form-btn svg {
+    width: 1.3rem;
   }
 
   footer {
