@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: var(--br);
   transition: all 0.3s ease;
 }
@@ -62,6 +63,7 @@
 }
 
 .video-description {
+  text-align: center;
   font-size: 1.8rem;
   padding: 3rem;
 }
@@ -124,6 +126,14 @@
   .website-card {
     height: 48rem;
   }
+
+  .website-heading {
+    padding-bottom: 0;
+  }
+
+  .website-description {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 27em) {
@@ -134,7 +144,7 @@
   }
 
   .website-card {
-    height: 48rem;
+    height: 52rem;
   }
 
   .video-card,
@@ -146,11 +156,13 @@
   .website-heading {
     font-size: 2.6rem;
     padding: 1.2rem;
+    padding-bottom: 0;
   }
 
   .video-description {
     font-size: 1.8rem;
     padding: 2rem;
+    padding-bottom: 0;
   }
 }
 
@@ -169,6 +181,8 @@
 
   .video-card,
   .website-card {
+    display: flex;
+    justify-content: space-around;
     height: 42rem;
     width: 28rem;
   }
@@ -187,6 +201,6 @@
   .video-description,
   .website-description {
     font-size: 1.4rem;
-    padding: 2rem;
+    padding-top: 0.4rem;
   }
 }
